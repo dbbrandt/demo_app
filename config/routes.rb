@@ -1,4 +1,12 @@
 DemoApp::Application.routes.draw do
+  resources :microposts
+
+  get "pages/home"
+
+  get "pages/contact"
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
